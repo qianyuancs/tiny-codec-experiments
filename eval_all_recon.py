@@ -5,8 +5,8 @@ from pystoi import stoi
 from pesq import pesq
 
 # 设置路径
-recon_dir = "results/recon"
-data_dir = "data/LibriSpeech/samples"
+recon_dir = "重构wav文件"
+data_dir = "原始wav文件"
 sr = 16000  # 采样率
 
 # 获取重建文件列表
@@ -52,7 +52,7 @@ for recon_file in recon_files:
     print(f"{recon_file}: PESQ={pesq_score:.3f}, STOI={stoi_score:.3f}")
 
 # 写入 CSV
-csv_file = "results/eval_results1000.csv"
+csv_file = "你的结果.csv"
 with open(csv_file, mode='w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(["file", "PESQ", "STOI"])
