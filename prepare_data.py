@@ -1,7 +1,7 @@
 import torchaudio, os
 from pathlib import Path
 
-out_dir = Path("data/LibriSpeech/samples")
+out_dir = Path("原始wav文件下载")
 out_dir.mkdir(parents=True, exist_ok=True)
 
 # 下载 test-clean （干净的小测试集）
