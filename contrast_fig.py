@@ -3,10 +3,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 写死路径
-orig_path = "C:/Users/21978/Desktop/code/warm_up/data/LibriSpeech/samples/sample_0.wav"#原始语音
-recon_path = "C:/Users/21978/Desktop/code/warm_up/results/recon/sample_0.wav"#重建语音（opus)
-recon_path2=r"C:\Users\21978\Desktop\code\warm_up\results\recon\recon_step000000_sample_28.wav"#DAC重建语音
-out_path = "C:/Users/21978/Desktop/code/warm_up/results/fig_sample1.png"
+orig_path = "data/LibriSpeech/samples/sample_0.wav"#原始语音
+recon_path = "results/recon/sample_0.wav"#重建语音（opus)
+recon_path2=r"results\recon\recon_step000000_sample_28.wav"#DAC重建语音
+out_path = "results/fig_sample1.png"
 
 # 读取音频
 y_orig, sr = librosa.load(orig_path, sr=16000)
